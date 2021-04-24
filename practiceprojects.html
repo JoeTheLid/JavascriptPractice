@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <script src="flip.js"></script>
+<style>
+    html {background-color: black;
+    color: white;}
+    
+    h1{text-align: center;}
+    /* div {margin-left: 50%;
+    margin-top: 25%;} */
+
+    /* input {margin-left: 50%;
+    margin-top: 25%;} */
+    
+    .container {margin-left:35%;
+    margin-right: 35%;
+    margin-top:2em;
+    text-align: center;
+    }
+    #counter {text-align: center;
+    font-size: 3em;}
+
+    .whitebox {background-color: white;
+    color: black;
+    }
+
+    .reviewbox{width:40ch;
+    height:150px;}
+    
+    #avatar {height: 128px;
+    width: 128px;}
+
+    .icon {height:25px;
+    width:25px}
+
+</style>
+</head>
+<body id='pagebody'>
+    <header>
+        <h1>Javascript Projects</h1>
+    </header>
+    <div class="container">
+        <h2>Reviews</h2>
+        <div class="whitebox">
+            <div class="picture" id='reviewuserpic'><img src="./images/avatar.jpg" alt="usepic" id='avatar'></div>
+            <div id="reviewtext" class="reviewbox">Placeholder text blah blah blah blah blah</div>
+            <input type="image" src="./images/left-arrow.png" class=".icon" onclick="newreview()" id='reviewleftarrow'>
+            <input type="image" src="./images/right-arrow.png" class=".icon" onclick="newreview()" id="reviewrightarrow">
+            <!-- <button onclick="newreview()">Back</button>
+        <button onclick='newreview()'>Forward</button> -->
+        </div>
+    </div>
+    <div class="underline"></div>
+    
+    <div id='div2' class="container">
+        <div id='div1'><input type="button" value='Change Colour' id='colourbutton' onclick="colourflip()"></input>
+        <p id='counter'>0</p>
+        <button onclick="countup()">Increase</button>
+        <button onclick='countreset()'>Reset</button>
+        <button onclick='countdown()'>Decrease</button>
+        </div>
+        </div>
+
+    
+    
+</body>
